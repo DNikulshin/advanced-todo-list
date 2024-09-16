@@ -1,0 +1,68 @@
+GET http://localhost:3000/tasks
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcyNjQ1ODY3MiwiZXhwIjoxNzI2NDYyMjcyfQ.4zzDAiu6hNL56wG4Ic1kZVRJDn6MnOnaE4QbpmFnmws
+
+### 
+
+POST http://localhost:3000/tasks
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcyNjQ1NzMyMSwiZXhwIjoxNzI2NDYwOTIxfQ.Ha4-bveaxnS7X3AYkNOwc5m-bJvA9TFKuVH7hoh6FLo
+
+
+{
+    "title": "test1",
+    "description": "description 1"
+}
+### 
+
+PATCH  http://localhost:3000/tasks/11
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcyNjQ1NzMyMSwiZXhwIjoxNzI2NDYwOTIxfQ.Ha4-bveaxnS7X3AYkNOwc5m-bJvA9TFKuVH7hoh6FLo
+
+{
+    "title": "test112",
+    "description": "description 112"
+    
+}
+###
+
+DELETE   http://localhost:3000/tasks/11
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcyNjQ1NzMyMSwiZXhwIjoxNzI2NDYwOTIxfQ.Ha4-bveaxnS7X3AYkNOwc5m-bJvA9TFKuVH7hoh6FLo
+
+###
+
+POST http://localhost:3000/auth/register
+content-type: application/json
+
+{
+    "email": "test1@test.ru",
+    "password": ""
+}
+
+### 
+
+
+POST http://localhost:3000/auth/login
+content-type: application/json
+
+{
+    "email": "test@test.ru",
+    "password": "123456"
+}
+
+### 
+
+
+POST http://localhost:3000/auth/refresh
+content-type: application/json
+Cookie: refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcyNjQ1ODU1MywiZXhwIjoxNzI3MDYzMzUzfQ.5ByMkWnE2EUFv22O5JNieX41Zxv1CNnBudSCd4sYfiA;
+
+### 
+
+
+
+Get http://localhost:3000/auth/google
+content-type: application/json
+
+### 
