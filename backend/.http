@@ -1,6 +1,10 @@
 GET http://localhost:3000/tasks
 content-type: application/json
 Authorization: Bearer 
+<<<<<<< HEAD
+=======
+
+>>>>>>> tasks-crud
 ### 
 
 POST http://localhost:3000/tasks
@@ -16,7 +20,12 @@ Authorization: Bearer
 
 PATCH  http://localhost:3000/tasks/11
 content-type: application/json
+<<<<<<< HEAD
 Authorization: Bearer
+=======
+Authorization: Bearer 
+
+>>>>>>> tasks-crud
 {
     "title": "test112",
     "description": "description 112"
@@ -27,6 +36,10 @@ Authorization: Bearer
 DELETE   http://localhost:3000/tasks/11
 content-type: application/json
 Authorization: Bearer
+<<<<<<< HEAD
+=======
+
+>>>>>>> tasks-crud
 ###
 
 POST http://localhost:3000/auth/register
